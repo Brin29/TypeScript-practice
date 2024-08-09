@@ -28,9 +28,11 @@ console.log(ageText);
 //#endregion
 
 //#region STRING
-
+const name = "Breiner";
+console.log(`Mi nombre es: ${name}`);
 
 //#endregion
+
 
 
 export {};
