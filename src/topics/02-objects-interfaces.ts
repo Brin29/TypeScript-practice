@@ -11,7 +11,8 @@ interface IPerson{
 // Herencia de interfaces
 interface IStudent extends IPerson{
     career: string;
-    university: string;
+    // La interrogante hace que la interfaz sea opcional
+    university?: string;
 };
 
 // Objects
@@ -21,6 +22,15 @@ const personaje: IPerson = {
     age: 19
 };
 
+const student: IStudent = {
+    name: "Breiner",
+    lastName: "Parra",
+    age: 20,
+    career: "Garcia Marquez",
+    university: "Los santos"
+}
+
 console.log(personaje);
+console.log(student);
 
 export {};
